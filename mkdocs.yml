@@ -1,0 +1,42 @@
+site_name: 내 기술 노트
+site_language: ko
+
+theme:
+  name: material
+  language: ko
+
+  palette:
+    # 라이트 모드
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 다크 모드로 전환
+
+    # 다크 모드
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 라이트 모드로 전환
+
+  features:
+    - navigation.tabs
+    - content.code.copy
+
+plugins:
+  - search:
+      lang:
+        - ko
+        - en
+
+nav:
+  - 홈: index.md
+
+  - 가이드:
+      - 시작하기: guides/getting-started.md
+
+  - 메모:
+      - 첫 번째 메모: notes/first-note.md
